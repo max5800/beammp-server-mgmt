@@ -24,6 +24,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Editor Files
+*.code-workspace
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
