@@ -1,7 +1,21 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const mongoose = require('mongoose');
 
-app.get('/', (req, res) => res.send('BeamMP Server Management Backend is running!'));
+// Route for the root path
+app.get('/', (req, res) => {
+  res.send('BeamMP Server Management Backend is running!');
+});
 
-app.listen(port, () => console.log(`Server listening on port ${port}!`));
+// Set the port
+const PORT = process.env.PORT || 3000;
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/beammp')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...', err));
