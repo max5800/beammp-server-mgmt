@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
+
+// Middleware
+app.use(express.json()); // To parse JSON request bodies
+app.use('/api', authRoutes); // Use the auth routes
 
 // Route for the root path
 app.get('/', (req, res) => {
