@@ -23,37 +23,37 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 
 #### Schritt 1: Backend-Setup
 
-- Einrichtung von Node.js und Express.
-- Erstellung einer Testroute.
-- Integration der Datenbank.
-- Implementierung von Benutzermodell und Authentifizierung.
+- [ ] Einrichtung von Node.js und Express
+- [ ] Erstellung einer Testroute.
+- [ ] Integration der Datenbank.
+- [ ] Implementierung von Benutzermodell und Authentifizierung.
 
 #### Schritt 2: Grundfunktionen des Backends
 
-- Entwicklung der Server-Management-Logik.
-- Implementierung des Konfigurationsmanagements.
-- Hinzufügen von Funktionen für Logs und Überwachung.
+- [ ] Entwicklung der Server-Management-Logik.
+- [ ] Implementierung des Konfigurationsmanagements.
+- [ ] Hinzufügen von Funktionen für Logs und Überwachung.
 
 ### Frontend-Entwicklung
 
 #### Schritt 3: Frontend-Entwicklung
 
-- Erstellung des Frontend-Grundgerüsts.
-- Herstellung der Verbindung zwischen Frontend und Backend.
-- Entwicklung der Benutzeroberfläche für das Server-Management.
-- Implementierung der Benutzerauthentifizierung und -verwaltung.
+- [ ] Erstellung des Frontend-Grundgerüsts.
+- [ ] Herstellung der Verbindung zwischen Frontend und Backend.
+- [ ] Entwicklung der Benutzeroberfläche für das Server-Management.
+- [ ] Implementierung der Benutzerauthentifizierung und -verwaltung.
 
 ### Testen, Verfeinern und Bereitstellung
 
 #### Schritt 4: Testen und Verfeinern
 
-- Durchführung von Backend- und Frontend-Tests.
-- Fehlerbehebung und Optimierung.
+- [ ] Durchführung von Backend- und Frontend-Tests.
+- [ ] Fehlerbehebung und Optimierung.
 
 #### Schritt 5: Bereitstellung und Weiterentwicklung
 
-- Bereitstellung des Projekts.
-- Sammeln von Feedback und Implementierung von Verbesserungen.
+- [ ] Bereitstellung des Projekts.
+- [ ] Sammeln von Feedback und Implementierung von Verbesserungen.
 
 ## Mitwirken 🤝
 

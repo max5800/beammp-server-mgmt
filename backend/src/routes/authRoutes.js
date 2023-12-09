@@ -2,39 +2,83 @@ const express = require('express');
 const User = require('../models/User'); // Adjust the path as needed
 const router = express.Router();
 const bcrypt = require('bcrypt');
+const DEBUG = true; // Set this to false to disable debugging logs
 
 
 // Registration route
 router.post('/register', async (req, res) => {
+  if (DEBUG) {
+    console.log('Register route hit');
+    console.log('Request body:', req.body);
+  }
+
   try {
     let user = new User({
       username: req.body.username,
-      password: req.body.password, // Hashed password will be stored here later
+      password: req.body.password, // plaintext password
     });
 
+    if (DEBUG) {
+      console.log('User before save:', user);
+    }
+
     await user.save();
+
+    if (DEBUG) {
+      console.log('User after save:', user);
+    }
+
     res.status(201).send({ message: "User successfully registered." });
   } catch (error) {
+    console.error('Error caught:', error);
     res.status(500).send({ message: "Error during registration." });
   }
 });
 
 // Login route
 router.post('/login', async (req, res) => {
+  if (DEBUG) {
+    console.log('Login route hit');
+    console.log('Request body:', req.body);
+  }
+
   try {
     let user = await User.findOne({ username: req.body.username });
     if (!user) {
       return res.status(404).send({ message: "User not found." });
     }
 
+    if (DEBUG) {
+      console.log('User found:', user);
+    }
+
     // Password verification
+    if (DEBUG) {
+      console.log('Comparing passwords');
+      console.log('Plaintext password:', req.body.password);
+      console.log('Hashed password:', user.password);
+    }
+    
     const validPassword = await bcrypt.compare(req.body.password, user.password);
+    
+    if (DEBUG) {
+      console.log('bcrypt.compare() result:', validPassword);
+    }
+    
     if (!validPassword) {
+      if (DEBUG) {
+        console.log('Password is not valid');
+      }
       return res.status(401).send({ message: "Incorrect password." });
+    }
+    
+    if (DEBUG) {
+      console.log('Password is valid');
     }
 
     res.send({ message: "Successfully logged in." });
   } catch (error) {
+    console.error('Error caught:', error);
     res.status(500).send({ message: "Error during login." });
   }
 });

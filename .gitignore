@@ -39,3 +39,4 @@ yarn-error.log*
 
 # BeamMP server files (if you decide to keep them in the project directory for development)
 beammp/
+0_old

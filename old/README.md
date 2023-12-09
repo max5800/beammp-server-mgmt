@@ -1,2 +1,0 @@
-# beammp-server-mgmt
------------------
