@@ -4,7 +4,7 @@ const { spawn } = require('child_process');
 let serverProcess;
 
 exports.startServer = (req, res) => {
-  serverProcess = spawn('./start-test-script.sh', { cwd: '../test/' });
+  serverProcess = spawn('./start-test-script.sh', { cwd: '../../test/' });
 
   serverProcess.stdout.on('data', (data) => {
     console.log(`Server: ${data}`);

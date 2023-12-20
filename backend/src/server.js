@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const authRoutes = require('./routes/authRoutes');
-const serverCommands = require('./routes/serverCommands');
+const authRoutes = require('./routes/auth-Routes');
+const serverCommands = require('./routes/server-Commands');
 
 // Middleware
 app.use(express.json()); // To parse JSON request bodies
