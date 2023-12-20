@@ -9,6 +9,7 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 - **Konfigurationsmanagement** ⚙️: Anpassen von Serverkonfigurationen.
 - **Benutzerverwaltung** 👥: Verwaltung von Benutzerzugängen und Berechtigungen.
 - **Log-Dateien-Anzeige** 📜: Anzeigen und Überwachen von Server-Logs.
+- **Server-Terminal** ⌨️: Befehle direkt an BeamMP-Server schicken.
 - **Benutzeroberfläche** 💻: Benutzerfreundliches Frontend.
 
 ## Technologie Stack 🛠️
@@ -23,14 +24,14 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 
 #### Schritt 1: Backend-Setup
 
-- [ ] Einrichtung von Node.js und Express
-- [ ] Erstellung einer Testroute.
-- [ ] Integration der Datenbank.
-- [ ] Implementierung von Benutzermodell und Authentifizierung.
+- [x] Einrichtung von Node.js und Express
+- [x] Erstellung einer Testroute.
+- [x] Integration der Datenbank.
+- [x] Implementierung von Benutzermodell und Authentifizierung.
 
 #### Schritt 2: Grundfunktionen des Backends
 
-- [ ] Entwicklung der Server-Management-Logik.
+- [x] Entwicklung der Server-Management-Logik.
 - [ ] Implementierung des Konfigurationsmanagements.
 - [ ] Hinzufügen von Funktionen für Logs und Überwachung.
 
@@ -42,6 +43,8 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 - [ ] Herstellung der Verbindung zwischen Frontend und Backend.
 - [ ] Entwicklung der Benutzeroberfläche für das Server-Management.
 - [ ] Implementierung der Benutzerauthentifizierung und -verwaltung.
+- [ ] Server Terminal
+- [ ] Editor für Konfigurationsmanagement
 
 ### Testen, Verfeinern und Bereitstellung
 
