@@ -34,7 +34,8 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 
 - [x] Entwicklung der Server-Management-Logik.
 - [x] Implementierung des Konfigurationsmanagements.
-- [ ] Hinzufügen von Funktionen für Logs und Überwachung.
+- [x] Hinzufügen von Funktionen für Logs.
+- [ ] Hinzufügen eines Websocket für das Server-Terminal
 - [ ] Sicherung der API Funktionen mit JWT
 
 ### Frontend-Entwicklung
