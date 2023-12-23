@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth-routes');
 const serverCommands = require('./routes/server-commands');
 const configEditor = require('./routes/config-editor')
+const logRoutes = require('./routes/log-routes');
 
 // Middleware
 app.use(express.json()); // To parse JSON request bodies
@@ -35,3 +36,6 @@ app.post('/api/stop', serverCommands.stopServer);
 
 // Route for the config editor
 app.use('/api/config', configEditor);
+
+// Route for the log
+app.use('/api/log', logRoutes);

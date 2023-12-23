@@ -1,0 +1,6 @@
+2022-01-01 10:00:00 - INFO - Server started successfully.
+2022-01-01 10:01:23 - DEBUG - Received request to create a new user.
+2022-01-01 10:01:23 - DEBUG - User creation successful. User ID: 12345
+2022-01-01 10:02:15 - ERROR - Failed to connect to the database.
+2022-01-01 10:02:15 - ERROR - Please check your database configuration.
+2022-01-01 10:03:42 - INFO - Server stopped.
