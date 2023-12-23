@@ -8,6 +8,7 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 - **Serversteuerung** 🎮: Starten, Stoppen und Neustarten von BeamMP-Servern.
 - **Konfigurationsmanagement** ⚙️: Anpassen von Serverkonfigurationen.
 - **Benutzerverwaltung** 👥: Verwaltung von Benutzerzugängen und Berechtigungen.
+- **API Authentifizierung** 🔐: Nur angemeldete User können API calls durchführen.
 - **Log-Dateien-Anzeige** 📜: Anzeigen und Überwachen von Server-Logs.
 - **Server-Terminal** ⌨️: Befehle direkt an BeamMP-Server schicken.
 - **Benutzeroberfläche** 💻: Benutzerfreundliches Frontend.
@@ -32,8 +33,9 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 #### Schritt 2: Grundfunktionen des Backends
 
 - [x] Entwicklung der Server-Management-Logik.
-- [ ] Implementierung des Konfigurationsmanagements.
+- [x] Implementierung des Konfigurationsmanagements.
 - [ ] Hinzufügen von Funktionen für Logs und Überwachung.
+- [ ] Sicherung der API Funktionen mit JWT
 
 ### Frontend-Entwicklung
 

@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth-routes');
 const serverCommands = require('./routes/server-commands');
-const configEditor = require('.routes/config-editor')
+const configEditor = require('./routes/config-editor')
 
 // Middleware
 app.use(express.json()); // To parse JSON request bodies
