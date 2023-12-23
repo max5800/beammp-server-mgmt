@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth-routes');
-const serverCommands = require('./routes/server-Commands');
+const serverCommands = require('./routes/server-commands');
 const configEditor = require('.routes/config-editor')
 
 // Middleware
