@@ -1,5 +1,5 @@
 const express = require('express');
-const User = require('../models/user'); // Adjust the path as needed
+const User = require('../models/User'); // Adjust the path as needed
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const DEBUG = true; // Set this to false to disable debugging logs
