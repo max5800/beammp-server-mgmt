@@ -65,6 +65,9 @@ Das `beammp-server-mgmt` Tool ist eine umfassende Lösung zur Verwaltung von Bea
 
 Jede Art von Beiträgen, Ideen oder Feedback ist herzlich willkommen!
 
+## Notizen
+- API mit Swagger abbilden.
+
 ## Lizenz 📄
 
 [MIT](LICENSE)
