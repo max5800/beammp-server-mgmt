@@ -5,6 +5,10 @@ const authRoutes = require('./routes/auth-routes');
 const serverCommands = require('./routes/server-commands');
 const configEditor = require('./routes/config-editor')
 const logRoutes = require('./routes/log-routes');
+const cors = require('cors');
+
+// Enable CORS for all routes
+app.use(cors());
 
 // Middleware
 app.use(express.json()); // To parse JSON request bodies

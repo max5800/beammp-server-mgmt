@@ -67,6 +67,9 @@ Jede Art von Beiträgen, Ideen oder Feedback ist herzlich willkommen!
 
 ## Notizen
 - API mit Swagger abbilden.
+- Start FrontEnd: "npm start"
+- Start BackEnd: "nodemon server.js"
+- Configure Cors to be SAFE
 
 ## Lizenz 📄
 
